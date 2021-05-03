@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  #remove-product {
+    display: none;
+  }
+  #remove-contact {
+    display: none;
+  }
+  #login {
+    display: none;
+  }
+}
+body {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: #1a1a1b;
+  color: white;
+}
+#nav-controller {
+  position: fixed;
+  width: 100%;
+}
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 3rem;
+  background-color: #1a1a1b;
+  height: 1em;
+  max-width: 100%;
+  margin: auto;
+}
+#nav-bar {
+  display: flex;
+  align-items: flex-end;
+}
+#logo {
+  font-size: 2rem;
+  align-self: center;
+  margin: 0 0.5em;
+}
+#logo-name {
+  font-size: 2rem;
+  align-self: center;
+  margin-right: 1em;
+}
+.nav-link {
+  font-size: 1.2rem;
+  margin: 0 0.5em;
+}
+#nav-login {
+  display: flex;
+  align-items: flex-end;
+}
+#login {
+  margin: 0 1em;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  background-image: url(../images/moon3.jpg);
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1a1a1b;
+}
+#header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 18em;
+  font-size: 3rem;
+}
+#title {
+  text-align: center;
+  color: white;
+}
+#description {
+  font-size: 1rem;
+  max-width: 35em;
+  text-align: center;
+  color: white;
+}
+#product {
+  min-height: 53em;
+  width: 100%;
+  background-color: #1a1a1b;
+}
+#product-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin: 1em 0;
+}
+#product-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 75%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+#product-img-container {
+  width: 100%;
+  height: auto;
+  background-image: url(../images/moon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.1em;
+}
+#product-img {
+  height: 30em;
+}
+#product-keypoints {
+  align-self: flex-start;
+}
+.product-key h3,
+.product-key p {
+  margin: 1em;
+  text-align: center;
+}
+#features {
+  min-height: 53em;
+  width: 100%;
+  background-color: black;
+}
+#features-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin: 1em 0;
+}
+#features-description {
+  text-align: center;
+  max-width: 35em;
+  margin: 0 auto 2em;
+}
+#features-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 75%;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  border-radius: 0.1em;
+}
+#features-left-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+#features-right-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+.features-key h3,
+.features-key p {
+  text-align: center;
+  margin: 0.5em;
+}
+#planets-container {
+  display: flex;
+  margin: 1em auto auto;
+  max-width: 75%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+}
+.planets {
+  margin: 0 0.5em;
+}
+#mercury,
+#venus,
+#earth,
+#mars,
+#jupiter,
+#saturn,
+#uranus,
+#neptune {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#mercury-img {
+  font-size: 10rem;
+  color: #9d9d9d;
+}
+#venus-img {
+  font-size: 10rem;
+  color: #b66816;
+}
+#earth-img {
+  font-size: 10rem;
+  color: #415062;
+}
+#mars-img {
+  font-size: 10rem;
+  color: #7e6550;
+}
+#jupiter-img {
+  font-size: 10rem;
+  color: #bf9f91;
+}
+#saturn-img {
+  font-size: 10rem;
+  color: #c1baa4;
+}
+#uranus-img {
+  font-size: 10rem;
+  color: #aae1fd;
+}
+#neptune-img {
+  font-size: 10rem;
+  color: #0f81d5;
+}
+#pricing {
+  min-height: 53em;
+  width: 100%;
+  background-color: #1a1a1b;
+}
+#pricing-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin: 1em 0 0;
+}
+#pricing-description {
+  text-align: center;
+  margin: 0 auto 2em;
+}
+#pricing-container {
+  display: flex;
+  max-width: 75%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.plan-pricing-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 30em;
+  width: 20em;
+  text-align: center;
+  list-style: none;
+  background-color: black;
+  margin: 1em;
+  padding: 1em;
+}
+.plan-pricing-cards:hover {
+  border: #1279fd 1px solid;
+}
+.plan-price {
+  font-size: 3rem;
+  color: #1279fd;
+}
+.plan-duration {
+  font-size: 1rem;
+}
+.plan-price-description {
+  font-size: 1rem;
+  display: block;
+}
+.plan-card-description {
+  display: block;
+}
+.plan-signup-button {
+  font-size: 20px;
+  padding: 0.5em 2em;
+  border-radius: 0.1em;
+  background-color: #1279fd;
+  color: white;
+  border: none;
+}
+.plan-signup-button:hover {
+  cursor: pointer;
+}
+.plan-signup-description {
+  font-size: 0.8rem;
+  display: block;
+  margin-top: 0.2em;
+}
+.plan-more-information:hover {
+  color: #1279fd;
+}
+hr {
+  width: 50%;
+}
+#plan-features {
+  display: block;
+  text-align: center;
+  margin: 2em auto;
+  width: 30em;
+}
+#contact {
+  background-color: black;
+  min-height: 25em;
+  max-width: 100%;
+}
+#contact-title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  margin: 1em 0 0;
+}
+#contact-description {
+  text-align: center;
+  margin: 0 auto 2em;
+}
+#contact-email {
+  display: flex;
+  justify-content: center;
+}
+#email {
+  font-size: 20px;
+  padding: 0.5em 2em;
+  border-radius: 0.1em;
+  color: white;
+  border: none;
+}
+#email:focus {
+  border-style: none;
+  outline: none;
+}
+#email-submit {
+  font-size: 20px;
+  padding: 0.5em 2em;
+  border-radius: 0.1em;
+  background-color: #1279fd;
+  color: white;
+  border: none;
+}
+#email-submit:hover {
+  cursor: pointer;
+}
+#contact-container {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+#facebook,
+#instagram,
+#github,
+#twitter,
+#youtube {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0.2em;
+}

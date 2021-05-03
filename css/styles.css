@@ -5,13 +5,7 @@
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  #remove-product {
-    display: none;
-  }
-  #remove-contact {
-    display: none;
-  }
-  #login {
+  #nav-section {
     display: none;
   }
 }
@@ -280,7 +274,7 @@ header {
   display: block;
 }
 .plan-signup-button {
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 0.5em 2em;
   border-radius: 0.1em;
   background-color: #1279fd;
@@ -305,7 +299,7 @@ hr {
   display: block;
   text-align: center;
   margin: 2em auto;
-  width: 30em;
+  width: 75%;
 }
 #contact {
   background-color: black;
@@ -322,12 +316,15 @@ hr {
   text-align: center;
   margin: 0 auto 2em;
 }
-#contact-email {
+#form {
   display: flex;
   justify-content: center;
+  max-width: 75%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 #email {
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 0.5em 2em;
   border-radius: 0.1em;
   color: white;
@@ -337,15 +334,15 @@ hr {
   border-style: none;
   outline: none;
 }
-#email-submit {
-  font-size: 20px;
+#submit {
+  font-size: 1.2rem;
   padding: 0.5em 2em;
   border-radius: 0.1em;
   background-color: #1279fd;
   color: white;
   border: none;
 }
-#email-submit:hover {
+#submit:hover {
   cursor: pointer;
 }
 #contact-container {
